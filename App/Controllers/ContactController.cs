@@ -121,7 +121,7 @@ public class ContactController : Controller
     {
         try
         {
-             const int pageSize = 1;
+             const int pageSize = 5;
         int totalContacts = contacts.Count();
         int totalPages = (int)Math.Ceiling((double)totalContacts / pageSize);
         return new PagedContactsVM
